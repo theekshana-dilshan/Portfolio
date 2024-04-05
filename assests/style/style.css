@@ -2,6 +2,44 @@ body{
     background-color: black;
 }
 
+header {
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header>img{
+    width: 125px;
+    position: absolute;
+    left: 5vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+header>nav {
+    height: fit-content;
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+header>nav>a {
+    padding: 10px;
+}
+
+#heroDiv{
+    position: page;
+}
+
 .cover-image{
     width: 100vw;
+}
+
+#imageToCover{
 }
