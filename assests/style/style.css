@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: black;
 }
@@ -7,8 +12,16 @@ header {
     position: fixed;
     width: 100vw;
     height: 60px;
-    padding: 10px;
     box-sizing: border-box;
+    top: 0;
+    left: 0;
+    padding: 15px 10%;
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    overflow: hidden;
 }
 
 header>img{
@@ -33,13 +46,37 @@ header>nav>a {
     padding: 10px;
 }
 
+#hero{
+    position: relative;
+    width: 100%;
+    top: 60px;
+    justify-content: space-between;
+    min-height: calc(100vh - 60px);/*97vh;*/
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #363636;
+    overflow: hidden;
+}
+
 #heroDiv{
-    position: page;
+
+}
+
+.cover-image , #imageToCover , .hero-desc, .cv-button, .social-icons{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .cover-image{
     width: 100vw;
+    height: calc(100vh - 60px);
 }
 
 #imageToCover{
+    top: 0px;
+    left: 900px;
 }
