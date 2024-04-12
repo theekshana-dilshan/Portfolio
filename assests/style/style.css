@@ -5,6 +5,7 @@
 
 body{
     background-color: black;
+    background: var(--bg);
 }
 
 header {
@@ -123,6 +124,82 @@ header>nav>a {
 .cv-button{
     top: 500px;
     left: 5vw;
+}
+
+:root {
+    --x: 0;
+    --y: 0;
+    --xp: 0;
+    --yp: 0;
+    --hue: calc(0 + (var(--xp) * 500));
+    --bg: hsl(0, 0%, 0%);
+    --size: 100px;
+    --glow: radial-gradient(
+            50% 50% at center,
+            hsl(22, 91%, 46%), /* Changed to #F37A23 */
+            hsl(22, 91%, 36%), /* Adjusted lightness */
+            transparent
+    )
+    calc((var(--x) * 1px) - (var(--size) * 0.5))
+    calc((var(--y) * 1px) - (var(--size) * 0.5)) / var(--size) var(--size) no-repeat fixed;
+}
+
+button {
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1ch;
+    background: var(--bg);
+    border: 1px solid transparent;
+    box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
+    cursor: pointer;
+    background:
+            linear-gradient(var(--bg), var(--bg)) padding-box,
+            var(--glow),
+            linear-gradient(#f37a23, #f37a23) border-box;
+    transition: background-size 0.24s;
+    touch-action: none;
+    position: relative;
+    padding: 0.7rem 1rem;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
+    z-index: 2;
+    border-radius: 1rem;
+}
+
+button span {
+    background: var(--glow), #c4c4c4;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    inset: 0;
+    font-family: Josefin Sans;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+:root:has(button:active) {
+    --size: 300px;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    filter: blur(20px);
+    border: 4px solid transparent;
+    background: var(--glow);
+    border-radius: 1rem;
 }
 
 .responsive {
