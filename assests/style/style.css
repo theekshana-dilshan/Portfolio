@@ -80,3 +80,48 @@ header>nav>a {
     top: 0px;
     left: 900px;
 }
+
+.hero-desc{
+    top: 140px;
+    left: 5vw;
+}
+
+.hero-desc>h1{
+    color: white;
+    font-size: 80px;
+    margin: 0;
+    font-family: Josefin Sans;
+}
+
+.hero-desc>h2{
+    color: #F37A23;
+    font-size: 75px;
+    font-family: Josefin Sans;
+    margin-top: 20px;
+}
+
+.hero-desc>h3{
+    color: white;
+    font-size: 40px;
+    font-family: Josefin Sans;
+    margin-top: -10px;
+}
+
+.hero-desc>p{
+    margin-top: 20px;
+    color: white;
+}
+
+.cv-button{
+    top: 500px;
+    left: 5vw;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 270px;
+    border-top-right-radius: 270px;
+    border-bottom-left-radius: 270px;
+    border-bottom-right-radius: 270px;
+}
