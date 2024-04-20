@@ -421,26 +421,15 @@ button::after {
     top: 60px;
 }
 
-#java-icon{
+.card-icon{
     left: 0;
     right: 0;
     margin: auto;
-}
-
-#web-design-icon{
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-#ui-ux-icon{
-    left: 0;
-    right: 0;
-    margin: auto;
+    margin-top: 30px;
 }
 
 .card-desc{
-    top: 100px;
+    margin-top: 40px;
 }
 
 /*----------------------------------------------------------------------------------------------------media queries*/
