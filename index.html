@@ -59,53 +59,82 @@
     <section id="aboutSection">
         <!--About me left side-->
         <div id="photoDiv">
-            <img id="photoAbout" src="assests/images/photo_6084603804180920378_y.png" title="my photo" alt="my photo" width="350px">
+            <img id="photoAbout" src="assests/images/about-me-image.png" title="my photo" alt="my photo"  height="300px">
         </div>
 
         <!--About me right side-->
-        <div>
-            <h2>About me</h2>
-            <h3>Software Engineer Student</h3>
-            <p>
+        <div id="about-descriptions">
+            <h2 class="about-me-title">About</h2> <h2 class="about-me-title">&nbsp;me</h2>
+            <h3 id="about-h3">Software Engineer Student</h3>
+            <p id="about-decs">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur corporis dolor, ea eaque eligendi excepturi hic laboriosam libero maxime nam nihil pariatur placeat rem similique tempore veritatis vitae voluptatum.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur corporis dolor, ea eaque eligendi excepturi hic laboriosam libero maxime nam nihil pariatur placeat rem similique tempore veritatis vitae voluptatum.
             </p>
         </div>
 
         <!--About me my skill-->
-        <div>
-            <h2>My Skills</h2>
-            <img src="assests/images/kisspng-java-programmer-computer-programming-logo-5afe2f1e06f798.7422784015266076460285.png" title="java" alt="java logo" width="200px">
-            <img src="assests/images/pngegg.png" title="html" alt="html logo" width="100px">
-            <img src="assests/images/pngwing.com.png" title="css" alt="css logo" width="150px">
-            <img src="assests/images/pngwing.com%20(1).png" title="python" alt="python logo" width="100px">
-            <img src="assests/images/javascript-39395.png" title="javascript" alt="javascript logo" width="230px">
-            <img src="assests/images/pngwing.com%20(2).png" title="my sql" alt="mysql logo" width="150px">
+        <div id="skill-div">
+            <div id="skill-title-div">
+                <h2 class="skill-title">My</h2><h2 class="skill-title">&nbsp;Skills</h2>
+            </div>
+
+            <div class="main__cards cards">
+                <div class="cards__inner">
+                    <div class="cards__card card">
+                        <img class="skill-icons" src="assests/images/kisspng-java-programmer-computer-programming-logo-5afe2f1e06f798.7422784015266076460285.png" title="java" alt="java logo" width="200px">
+                    </div>
+                    <div class="cards__card card">
+                        <img class="skill-icons" src="assests/images/pngegg.png" title="html" alt="html logo" width="100px">
+                    </div>
+                    <div class="cards__card card">
+                        <img class="skill-icons" src="assests/images/pngwing.com.png" title="css" alt="css logo" width="150px">
+                    </div>
+                    <div class="cards__card card">
+                        <img class="skill-icons" src="assests/images/pngwing.com%20(1).png" title="python" alt="python logo" width="100px">
+                    </div>
+                    <div class="cards__card card">
+                        <img class="skill-icons" src="assests/images/javascript-39395.png" title="javascript" alt="javascript logo" width="230px">
+                    </div>
+                    <div class="cards__card card">
+                        <img class="skill-icons" src="assests/images/pngwing.com%20(2).png" title="my sql" alt="mysql logo" width="150px">
+                    </div>
+                </div>
+                <div class="overlay cards__inner"></div>
+            </div>
         </div>
     </section>
 
     <!--My services section-->
-    <section>
-        <h2>My Services</h2>
+    <section id="my-service">
+        <div id="service-title-div">
+            <h2 class="service-topic">My</h2><h2 class="service-topic">&nbsp;Services</h2>
+        </div>
 
-        <div>
-            <img src="assests/images/icons8-java-500.png" title="java" alt="java icon">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi delectus deserunt doloribus eius enim hic illo in totam velit! Magni nobis odio optio sapiente. Commodi ea quisquam quo quos?
-            </p>
-        </div>
-        <div>
-            <img src="assests/images/icons8-laptop-coding-100.png" title="web design" alt="html icon">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi delectus deserunt doloribus eius enim hic illo in totam velit! Magni nobis odio optio sapiente. Commodi ea quisquam quo quos?
-            </p>
-        </div>
-        <div>
-            <img src="assests/images/icons8-brush-100.png" title="ui ux design" alt="brush icon">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi delectus deserunt doloribus eius enim hic illo in totam velit! Magni nobis odio optio sapiente. Commodi ea quisquam quo quos?
-            </p>
-        </div>
+        <main class="main flow">
+            <div id="cards-div" class="main__cards cards">
+                <div class="cards__inner">
+                    <div class="cards__card card">
+                        <img id="java-icon" src="assests/images/icons8-java-500.png" title="java" alt="java icon" width="80px">
+                        <p class="card-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi delectus deserunt doloribus eius enim hic illo in totam velit! Magni nobis odio optio sapiente. Commodi ea quisquam quo quos?
+                        </p>
+                    </div>
+                    <div class="cards__card card">
+                        <img id="web-design-icon" src="assests/images/icons8-laptop-coding-100.png" title="web design" alt="html icon" width="80px">
+                        <p class="card-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi delectus deserunt doloribus eius enim hic illo in totam velit! Magni nobis odio optio sapiente. Commodi ea quisquam quo quos?
+                        </p>
+                    </div>
+                    <div class="cards__card card">
+                        <img id="ui-ux-icon" src="assests/images/icons8-brush-100.png" title="ui ux design" alt="brush icon" width="70px">
+                        <p class="card-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi delectus deserunt doloribus eius enim hic illo in totam velit! Magni nobis odio optio sapiente. Commodi ea quisquam quo quos?
+                        </p>
+                    </div>
+                </div>
+                <div class="overlay cards__inner"></div>
+            </div>
+        </main>
     </section>
 
     <!--My projects section-->
@@ -195,5 +224,6 @@
     </footer>
 
     <script  src="assests/scripts/script.js"></script>
+    <script  src="assests/scripts/script-cards.js1"></script>
 </body>
 </html>
