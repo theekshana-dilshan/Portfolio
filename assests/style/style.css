@@ -206,7 +206,7 @@ button::after {
     position: relative;
     display: flex;
     border-bottom: 1px solid #363636;
-    min-height: 200vh;
+    min-height: 175vh;
     overflow: hidden;
 }
 
@@ -287,9 +287,82 @@ button::after {
     color: #f37a23;
 }
 
-.skill-icons{
-
+.skill-cards{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #2b2b2b;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #f37a23;
+    border-width: 2px;
 }
+
+.skill-icons{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.skill-name{
+    position: absolute;
+    color: white;
+    bottom: 5px;
+    right: 0;
+    left: 0;
+}
+
+.skill-name-div{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 5px;
+    text-align: center;
+}
+
+#card-java{
+    position: absolute;
+    left: 10vw;
+    top: 140px;
+}
+
+#card-html{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 140px;
+}
+
+#card-css{
+    position: absolute;
+    right: 10vw;
+    top: 140px;
+}
+
+#card-javascript{
+    position: absolute;
+    top: 400px;
+    left: 10vw;
+}
+
+#card-mysql{
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#card-python{
+    position: absolute;
+    top: 400px;
+    right: 10vw;
+}
+
 
 /*----------------------------------------------------------------------------------------*/
 
@@ -430,6 +503,83 @@ button::after {
 
 .card-desc{
     margin-top: 40px;
+}
+
+#my-projects-section{
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #363636;
+    min-height: 125vh;
+    overflow: hidden;
+}
+
+#projects-title-div{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50px;
+}
+
+.projects-title{
+    display: inline-block;
+    font-size: 55px;
+    font-family: Josefin Sans;
+}
+
+#projects-title-div>h2:nth-child(1){
+    color: white;
+}
+
+#projects-title-div>h2:nth-child(2){
+    color: #f37a23;
+}
+
+.projects-cards{
+    width: 450px;
+    height: 300px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #363636;
+}
+
+#project-1{
+    position: absolute;
+    left: 12vw;
+    top: 170px;
+}
+
+#project-2{
+    position: absolute;
+    right: 12vw;
+    top: 170px;
+}
+
+#project-3{
+    position: absolute;
+    left: 12vw;
+    bottom: 50px;
+}
+
+#project-4{
+    position: absolute;
+    right: 12vw;
+    bottom: 50px;
+}
+
+.github-icon{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: auto;
+}
+
+.projects-cards:hover{
+    border-color: #f37a23;
+}
+
+.project-image{
+    position: absolute;
 }
 
 /*----------------------------------------------------------------------------------------------------media queries*/
