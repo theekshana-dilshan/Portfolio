@@ -74,7 +74,7 @@ header>nav>a {
 
 }
 
-.cover-image , #imageToCover , .hero-desc, .cv-button, .social-icons{
+.cover-image , .hero-desc, .cv-button, .social-icons{
     position: absolute;
     top: 0;
     left: 0;
@@ -86,8 +86,9 @@ header>nav>a {
 }
 
 #imageToCover{
-    top: 0px;
-    left: 900px;
+    position: absolute;
+    top: -60px;
+    right: 10px;
 }
 
 .hero-desc{
@@ -911,6 +912,10 @@ input:not(:placeholder-shown).text-fields + label {
     width: 100%;
     bottom: 5vh;
 }
+
+/*.icons{
+    position: absolute;
+}*/
 
 /*----------------------------------------------------------------------------------------------------media queries*/
 @media all and (max-width: 1300px) {
