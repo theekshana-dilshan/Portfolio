@@ -313,6 +313,7 @@ button::after {
     bottom: 5px;
     right: 0;
     left: 0;
+    font-family: Josefin Sans;
 }
 
 .skill-name-div{
@@ -363,6 +364,50 @@ button::after {
     right: 10vw;
 }
 
+#my-service{
+    position: relative;
+    min-height: calc(100vh - 60px);
+    border-bottom: 1px solid #363636;
+    display: grid;
+    place-items: center;
+}
+
+#service-title-div{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50px;
+}
+
+.service-topic{
+    display: inline-block;
+    font-size: 55px;
+    font-family: Josefin Sans;
+}
+
+#service-title-div>h2:nth-child(1){
+    color: white;
+}
+
+#service-title-div>h2:nth-child(2){
+    color: #f37a23;
+}
+
+#cards-div{
+    top: 60px;
+    font-family: Josefin Sans;
+}
+
+.card-icon{
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.card-desc{
+    margin-top: 40px;
+}
 
 /*----------------------------------------------------------------------------------------*/
 
@@ -461,55 +506,12 @@ button::after {
 
 
 /*----------------------------------------------------------------------------------------*/
-#my-service{
-    position: relative;
-    min-height: calc(100vh - 60px);
-    border-bottom: 1px solid #363636;
-    display: grid;
-    place-items: center;
-}
-
-#service-title-div{
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 50px;
-}
-
-.service-topic{
-    display: inline-block;
-    font-size: 55px;
-    font-family: Josefin Sans;
-}
-
-#service-title-div>h2:nth-child(1){
-    color: white;
-}
-
-#service-title-div>h2:nth-child(2){
-    color: #f37a23;
-}
-
-#cards-div{
-    top: 60px;
-}
-
-.card-icon{
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-top: 30px;
-}
-
-.card-desc{
-    margin-top: 40px;
-}
 
 #my-projects-section{
     position: relative;
     display: flex;
     border-bottom: 1px solid #363636;
-    min-height: 125vh;
+    min-height: 110vh;
     overflow: hidden;
 }
 
@@ -535,8 +537,8 @@ button::after {
 }
 
 .projects-cards{
-    width: 450px;
-    height: 300px;
+    width: 400px;
+    height: 250px;
     border-style: solid;
     border-width: 2px;
     border-color: #363636;
@@ -544,25 +546,25 @@ button::after {
 
 #project-1{
     position: absolute;
-    left: 12vw;
+    left: 15vw;
     top: 170px;
 }
 
 #project-2{
     position: absolute;
-    right: 12vw;
+    right: 15vw;
     top: 170px;
 }
 
 #project-3{
     position: absolute;
-    left: 12vw;
+    left: 15vw;
     bottom: 50px;
 }
 
 #project-4{
     position: absolute;
-    right: 12vw;
+    right: 15vw;
     bottom: 50px;
 }
 
@@ -580,6 +582,257 @@ button::after {
 
 .project-image{
     position: absolute;
+}
+
+#my-assignments-section{
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #363636;
+    min-height: 195vh;
+    overflow: hidden;
+}
+
+#assignments-title-div{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50px;
+}
+
+.assignments-title{
+    display: inline-block;
+    font-size: 55px;
+    font-family: Josefin Sans;
+}
+
+#assignments-title-div>h2:nth-child(1){
+    color: white;
+}
+
+#assignments-title-div>h2:nth-child(2){
+    color: #f37a23;
+}
+
+.assignments-cards{
+    width: 300px;
+    height: 250px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #363636;
+    position: absolute;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #212121;
+    font-family: Josefin Sans;
+}
+
+.assignments-cards-title{
+    color: white;
+    margin-top: 15px;
+}
+
+.assignments-cards-desc{
+    color: white;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.open-link-icon{
+    margin-top: 20px;
+}
+
+#assignment-01{
+    left: 10vw;
+    top: 170px;
+}
+
+#assignment-02{
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 170px;
+}
+
+#assignment-03{
+    right: 10vw;
+    top: 170px;
+}
+
+#assignment-04{
+    left: 10vw;
+    top: 480px;
+}
+
+#assignment-05{
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 480px;
+}
+
+#assignment-06{
+    right: 10vw;
+    top: 480px;
+}
+
+#assignment-07{
+    left: 10vw;
+    top: 792px;
+}
+
+#assignment-08{
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 792px;
+}
+
+#assignment-09{
+    right: 10vw;
+    top: 792px;
+}
+
+#assignment-10{
+    left: 10vw;
+    top: 1104px;
+}
+
+#assignment-11{
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 1104px;
+}
+
+#assignment-12{
+    right: 10vw;
+    top: 1104px;
+}
+
+#contact-me-section{
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #363636;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#contact-title-div{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50px;
+}
+
+.contact-title{
+    display: inline-block;
+    font-size: 55px;
+    font-family: Josefin Sans;
+}
+
+#contact-title-div>h2:nth-child(1){
+    color: white;
+}
+
+#contact-title-div>h2:nth-child(2){
+    color: #f37a23;
+}
+
+#contact-fields-div{
+    position: absolute;
+    display: grid;
+    width: 70vw;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.text-container{
+    width: 200px;
+    position: relative;
+}
+
+.label{
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    transition: all 0.2s;
+    padding: 0 2px;
+    z-index: 1;
+    color: white;
+    font-family: Josefin Sans;
+}
+
+.text-fields{
+    padding: 0.8rem;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #363636;
+    background-color: #363636;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    transition: all .3s;
+    color: white;
+}
+
+.label::before{
+    content: "";
+    height: 5px;
+    background-color: #363636;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+
+.text-fields:focus{
+    border: 2px solid #f37a23;
+}
+
+.text-fields:focus+.label,.filled{
+    top: -10px;
+    color: #f37a23;
+    font-size: 14px;
+}
+
+.text-fields::placeholder{
+    font-size: 16px;
+    opacity: 0;
+    transition: all .3s;
+
+}
+
+#send-button{
+
+}
+
+#first-name{
+
+}
+
+#last-name{
+
+}
+
+#contact-number{
+
+}
+
+#contact-number{
+
+}
+
+#email{
+
+}
+
+#massage{
+
 }
 
 /*----------------------------------------------------------------------------------------------------media queries*/
