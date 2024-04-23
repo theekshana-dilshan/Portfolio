@@ -1,11 +1,46 @@
-const syncPointer = ({ x: pointerX, y: pointerY }) => {
-  const x = pointerX.toFixed(2);
-  const y = pointerY.toFixed(2);
-  const xp = (pointerX / window.innerWidth).toFixed(2);
-  const yp = (pointerY / window.innerHeight).toFixed(2);
-  document.documentElement.style.setProperty('--x', x);
-  document.documentElement.style.setProperty('--xp', xp);
-  document.documentElement.style.setProperty('--y', y);
-  document.documentElement.style.setProperty('--yp', yp);
+console.clear();
+
+const cardsContainer = document.querySelector(".cards");
+const cardsContainerInner = document.querySelector(".cards__inner");
+const cards = Array.from(document.querySelectorAll(".card"));
+const overlay = document.querySelector(".overlay");
+
+const applyOverlayMask = (e) => {
+  const overlayEl = e.currentTarget;
+  const x = e.pageX - cardsContainer.offsetLeft;
+  const y = e.pageY - cardsContainer.offsetTop;
+
+  overlayEl.style = `--opacity: 1; --x: ${x}px; --y:${y}px;`;
 };
-document.body.addEventListener('pointermove', syncPointer);
+
+const createOverlayCta = (overlayCard, ctaEl) => {
+  const overlayCta = document.createElement("div");
+  overlayCta.classList.add("cta");
+  overlayCta.textContent = ctaEl.textContent;
+  overlayCta.setAttribute("aria-hidden", true);
+  overlayCard.append(overlayCta);
+};
+
+const observer = new ResizeObserver((entries) => {
+  entries.forEach((entry) => {
+    const cardIndex = cards.indexOf(entry.target);
+    let width = entry.borderBoxSize[0].inlineSize;
+    let height = entry.borderBoxSize[0].blockSize;
+
+    if (cardIndex >= 0) {
+      overlay.children[cardIndex].style.width = `${width}px`;
+      overlay.children[cardIndex].style.height = `${height}px`;
+    }
+  });
+});
+
+const initOverlayCard = (cardEl) => {
+  const overlayCard = document.createElement("div");
+  overlayCard.classList.add("card");
+  createOverlayCta(overlayCard, cardEl.lastElementChild);
+  overlay.append(overlayCard);
+  observer.observe(cardEl);
+};
+
+cards.forEach(initOverlayCard);
+document.getElementsByTagName("section")[2].addEventListener("pointermove", applyOverlayMask);
