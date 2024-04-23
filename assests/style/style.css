@@ -715,7 +715,7 @@ button::after {
     position: relative;
     display: flex;
     border-bottom: 1px solid #363636;
-    min-height: 100vh;
+    min-height: calc(100vh - 190px);
     overflow: hidden;
 }
 
@@ -742,17 +742,22 @@ button::after {
 
 #contact-fields-div{
     position: absolute;
-    display: grid;
+    /*display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    align-items: start;
+    gap: 1.25em;*/
     width: 70vw;
-    top: 150px;
+    height: 45vh;
+    top: 130px;
     left: 0;
     right: 0;
     margin: auto;
 }
 
 .text-container{
-    width: 200px;
-    position: relative;
+    position: absolute;
+    width: 46%;
+    /*position: relative;*/
 }
 
 .label{
@@ -804,35 +809,52 @@ button::after {
     font-size: 16px;
     opacity: 0;
     transition: all .3s;
+}
 
+.text-fields:focus::placeholder{
+    opacity: 1;
+    animation-delay: 0.2s;
+}
+
+.text-fields:focus + label,
+input:not(:placeholder-shown).text-fields + label {
+    top: -10px;
+    color: whitesmoke;
+    font-size: 14px;
 }
 
 #send-button{
-
+    position: absolute;
+    width: 150px;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
-#first-name{
-
+#first-name-container{
+    left: 0;
 }
 
-#last-name{
-
+#last-name-container{
+    top: 0;
+    right: 0;
 }
 
-#contact-number{
-
+#contact-number-container{
+    left: 0;
+    top: 70px;
 }
 
-#contact-number{
-
+#email-container{
+    right: 0;
+    top: 70px;
 }
 
-#email{
-
-}
-
-#massage{
-
+#massage-container{
+    top: 140px;
+    height: 40%;
+    width: 100%;
 }
 
 /*----------------------------------------------------------------------------------------------------media queries*/
