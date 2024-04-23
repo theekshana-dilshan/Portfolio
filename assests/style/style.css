@@ -857,6 +857,61 @@ input:not(:placeholder-shown).text-fields + label {
     width: 100%;
 }
 
+#footer-section{
+    position: relative;
+    height: 130px;
+    display: flex;
+    overflow: hidden;
+}
+
+#logo{
+    position: absolute;
+    width: 150px;
+    left: 5vw;
+    top: 2vh;
+}
+
+#let\'s-talk-div{
+    position: absolute;
+    font-family: Josefin Sans;
+    text-align: center;
+    top: 2vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#let\'s-talk{
+    color: white;
+    font-size: 20px;
+}
+
+#email-h4{
+    margin-top: 15px;
+    color: white;
+    font-size: 17px;
+}
+
+#stay-connected-div{
+    position: absolute;
+    font-family: Josefin Sans;
+    text-align: right;
+    color: white;
+    right: 5vw;
+    top: 2vh;
+}
+
+#connected-h3{
+    font-size: 20px;
+}
+
+#hr{
+    position: absolute;
+    color: white;
+    width: 100%;
+    bottom: 5vh;
+}
+
 /*----------------------------------------------------------------------------------------------------media queries*/
 @media all and (max-width: 1300px) {
     .img {
