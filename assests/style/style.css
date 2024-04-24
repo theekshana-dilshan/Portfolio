@@ -55,6 +55,14 @@ header>nav>a {
     transition: 0.4s ease-in-out;
 }
 
+#hero-div{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 0;
+    top: -60px;
+}
+
 #hero{
     position: relative;
     width: 100%;
@@ -66,7 +74,6 @@ header>nav>a {
     background-position: center;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #363636;
     overflow: hidden;
 }
 
@@ -206,10 +213,17 @@ button::after {
     border-radius: 1rem;
 }
 
+#about-div{
+    position: absolute;
+    height: 60px;
+    width: 20px;
+    left: 0;
+    bottom: 0;
+}
+
 #aboutSection{
     position: relative;
     display: flex;
-    border-bottom: 1px solid #363636;
     min-height: 175vh;
     overflow: hidden;
 }
@@ -368,10 +382,17 @@ button::after {
     right: 10vw;
 }
 
+#service-div{
+    position: absolute;
+    height: 60px;
+    width: 20px;
+    left: 0;
+    bottom: 0;
+}
+
 #my-service{
     position: relative;
     min-height: calc(100vh - 60px);
-    border-bottom: 1px solid #363636;
     display: grid;
     place-items: center;
 }
@@ -518,10 +539,17 @@ button::after {
 
 /*----------------------------------------------------------------------------------------*/
 
+#projects-div{
+    position: absolute;
+    height: 60px;
+    width: 20px;
+    left: 0;
+    bottom: 0;
+}
+
 #my-projects-section{
     position: relative;
     display: flex;
-    border-bottom: 1px solid #363636;
     min-height: 110vh;
     overflow: hidden;
 }
@@ -587,10 +615,17 @@ button::after {
     position: absolute;
 }
 
+#assignments-div{
+    position: absolute;
+    height: 60px;
+    width: 20px;
+    left: 0;
+    bottom: 0;
+}
+
 #my-assignments-section{
     position: relative;
     display: flex;
-    border-bottom: 1px solid #363636;
     min-height: 195vh;
     overflow: hidden;
 }
@@ -714,10 +749,17 @@ button::after {
     top: 1104px;
 }
 
+#contact-div{
+    position: absolute;
+    height: 60px;
+    width: 20px;
+    left: 0;
+    bottom: 0;
+}
+
 #contact-me-section{
     position: relative;
     display: flex;
-    border-bottom: 1px solid #363636;
     min-height: calc(100vh - 190px);
     overflow: hidden;
 }
