@@ -520,7 +520,7 @@
 
     #aboutSection{
         display: flex;
-        height: 100%;
+        min-height: 140vh;
     }
 
     .about-me-title{
@@ -561,8 +561,89 @@
         margin-top: 20px;
     }
 
+    .skill-title{
+        font-size: 40px;
+    }
+
     #skill-div{
         margin-top: 600px;
         width: 100%;
     }
+
+    .skill-cards{
+        width: 100px;
+        height: 100px;
+        border-width: 1px;
+    }
+
+    #card-java{
+        left: 10vw;
+        top: 80px;
+    }
+
+    #card-css{
+        right: 10vw;
+        top: 80px;
+    }
+
+    #card-html{
+        margin: 0;
+        left: 10vw;
+        top: 220px;
+    }
+
+    #card-javascript{
+        top: 220px;
+        left: 58vw;
+    }
+
+    #card-mysql{
+        top: 360px;
+        margin: 0;
+        left: 10vw;
+    }
+
+    #card-python{
+        top: 360px;
+        right: 10vw;
+    }
+
+    .skill-name{
+        font-size: 12px;
+        bottom: 2px;
+        right: 0;
+        left: 0;
+    }
+
+    .skill-name-div{
+        width: 100%;
+        height: 50px;
+        bottom: 0;
+    }
+
+    #icon-java{
+        width: 100px;
+    }
+
+    #icon-html{
+        width: 50px;
+    }
+
+    #icon-css{
+        width: 75px;
+    }
+
+    #icon-js{
+        width: 100px;
+    }
+
+    #icon-python{
+        width: 60px;
+    }
+
+    #icon-sql{
+        width: 80px;
+    }
+
+
 }

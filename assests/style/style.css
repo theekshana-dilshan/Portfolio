@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: black;
     background: var(--bg);
@@ -393,8 +397,6 @@ button::after {
 #my-service{
     position: relative;
     min-height: calc(100vh - 60px);
-    display: grid;
-    place-items: center;
 }
 
 #service-title-div{
@@ -434,110 +436,57 @@ button::after {
     margin-top: 40px;
 }
 
-/*----------------------------------------------------------------------------------------*/
-
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap");
-
-.main {
-    max-width: 75rem;
-    padding: 3em 1.5em;
-}
-
-.cards {
-    position: relative;
-}
-
-.cards__inner {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4em;
-}
-
-.card {
-    --flow-space: 0.5em;
-    --hsl: var(--hue), var(--saturation), var(--lightness);
-    flex: 1 1 14rem;
-    padding: 1.5em 2em;
-    display: grid;
-    grid-template-rows: auto auto auto 1fr;
-    align-items: start;
-    gap: 1.25em;
+.service-cards{
+    position: absolute;
+    width: 350px;
+    height: 400px;
     color: #eceff1;
     background-color: #2b2b2b;
     border: 1px solid #eceff133;
-    border-radius: 15px;
-    height: 350px;
     text-align: center;
+    border-radius: 20px;
 }
 
-.card:hover{
+.service-cards:hover{
+    background-color: #212121;
     border-color: #f37a23;
 }
 
-.card:nth-child(1) {
-    /*--hue: 165;
-    --saturation: 82.26%;
-    --lightness: 51.37%;*/
-
-    --hue: 27.6;
-    --saturation: 88.3%;
-    --lightness: 52.2%
+.card-icon{
+    margin-top: 50px;
 }
 
-.card:nth-child(2) {
-    --hue: 27.6;
-    --saturation: 88.3%;
-    --lightness: 52.2%
-}
-
-.card:nth-child(3) {
-    --hue: 27.6;
-    --saturation: 88.3%;
-    --lightness: 52.2%
-}
-
-.flow > * + * {
-    margin-top: var(--flow-space, 1.25em);
-}
-
-.overlay {
+.service-cards-topic{
     position: absolute;
-    inset: 0;
-    pointer-events: none;
-    user-select: none;
-    opacity: var(--opacity, 0);
-    -webkit-mask: radial-gradient(
-            25rem 25rem at var(--x) var(--y),
-            #000 1%,
-            transparent 50%
-    );
-    mask: radial-gradient(
-            25rem 25rem at var(--x) var(--y),
-            #000 1%,
-            transparent 50%
-    );
-    transition: 400ms mask ease;
-    will-change: mask;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 160px;
+    font-size: 20px;
 }
 
-.overlay .card {
-    background-color: hsla(var(--hsl), 0.15);
-    border-color: hsla(var(--hsl), 1);
-    box-shadow: 0 0 0 1px inset hsl(var(--hsl));
+.card-desc{
+    margin-top: 90px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-:not(.overlay) > .card {
-    transition: 400ms background ease;
-    will-change: background;
+#card-code{
+    top: 180px;
+    left: 10vw;
 }
 
-:not(.overlay) > .card:hover {
-    --lightness: 95%;
-    background: hsla(var(--hsl), 0.1);
+#card-web{
+    top: 180px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
-
-/*----------------------------------------------------------------------------------------*/
+#card-ui{
+    top: 180px;
+    right: 10vw;
+}
 
 #projects-div{
     position: absolute;
