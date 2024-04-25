@@ -645,5 +645,57 @@
         width: 80px;
     }
 
+    #my-service{
+        min-height: 125vh;
+    }
 
+    .service-topic{
+        font-size: 40px;
+    }
+
+    .service-cards{
+        width: 220px;
+        height: 250px;
+    }
+
+    #card-code{
+        top: 130px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #card-web{
+        top: 420px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #card-ui{
+        top: 710px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .card-icon{
+        margin-top: 30px;
+        width: 40px;
+    }
+
+    .service-cards-topic{
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 80px;
+        font-size: 15px;
+    }
+
+    .card-desc{
+        margin-top: 40px;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
 }
