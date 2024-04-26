@@ -524,7 +524,7 @@
     }
 
     .about-me-title{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     #photoDiv{
@@ -562,7 +562,7 @@
     }
 
     .skill-title{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     #skill-div{
@@ -650,7 +650,7 @@
     }
 
     .service-topic{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .service-cards{
@@ -697,5 +697,211 @@
         margin-right: 20px;
         margin-left: 20px;
         font-size: 12px;
+    }
+
+    #my-projects-section{
+        min-height: 112vh;
+    }
+
+    .projects-title{
+        font-size: 35px;
+    }
+
+    .projects-cards{
+        width: 250px;
+        height: 150px;
+    }
+
+    .project-image{
+        width: 250px;
+        height: 150px;
+    }
+
+    #project-1{
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: -50px;
+    }
+
+    #project-2{
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 150px;
+    }
+
+    #project-3{
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    #project-4{
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 300px;
+        margin-bottom: 30px;
+    }
+
+    #my-assignments-section{
+        min-height: 400vh;
+    }
+
+    .assignments-title{
+        font-size: 35px;
+    }
+
+    .assignments-cards{
+        width: 250px;
+        height: 200px;
+    }
+
+    .assignments-cards-title{
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .assignments-cards-desc{
+        font-size: 11px;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #assignment-01{
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 130px;
+    }
+
+    #assignment-02{
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 380px;
+    }
+
+    #assignment-03{
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 630px;
+    }
+
+    #assignment-04{
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 880px;
+    }
+
+    #assignment-05{
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 1130px;
+    }
+
+    #assignment-06{
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 1380px;
+    }
+
+    #assignment-07{
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 1630px;
+    }
+
+    #assignment-08{
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 1880px;
+    }
+
+    #assignment-09{
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 2130px;
+    }
+
+    #assignment-10{
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 2380px;
+    }
+
+    #assignment-11{
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 2630px;
+    }
+
+    #assignment-12{
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 2880px;
+    }
+
+    .contact-title{
+        font-size: 35px;
+    }
+
+    #contact-fields-div{
+        width: 90vw;
+        height: 55vh;
+        top: 95px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #first-name-container{
+        left: 0;
+    }
+
+    #last-name-container{
+        top: 65px;
+        left: 0;
+    }
+
+    #contact-number-container{
+        left: 0;
+        top: 130px;
+    }
+
+    #email-container{
+        left: 0;
+        top: 195px;
+    }
+
+    #massage-container{
+        top: 260px;
+        height: 30%;
+        width: 90%;
+    }
+
+    .text-container{
+        position: absolute;
+        width: 90%;
+    }
+
+    #send-button{
+        bottom: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 }
