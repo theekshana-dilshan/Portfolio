@@ -527,6 +527,115 @@ button::after {
     border-style: solid;
     border-width: 2px;
     border-color: #363636;
+    border-radius: 10px;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+}
+
+.card-container{
+    display: grid;
+}
+
+.projects-cards{
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image{
+    border-radius: 10px;
+}
+
+.card-data{
+    width: 280px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(243,122,35,1) 100%);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px #363636;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -8rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+    text-align: center;
+}
+
+.card-title{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 0.75rem;
+}
+
+.card-button{
+    text-decoration: none;
+    font-weight: 500;
+    color: #363636;
+}
+
+.card-button:hover{
+    text-decoration: underline;
+}
+
+.projects-cards:hover .card-data{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.projects-cards:hover{
+    animation: remove-overflow 2s forwards;
+}
+
+.projects-cards:not(:hover){
+    animation: show-overflow 2s forwards;
+}
+
+.projects-cards:not(:hover) .card-data{
+    animation: remove-data 1s forwards;
+}
+
+@keyframes show-data {
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to{
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0%{
+        transform: translateY(-7rem);
+    }
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
 }
 
 #project-1{
