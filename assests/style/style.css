@@ -355,46 +355,6 @@ button::after {
     text-align: center;
 }
 
-/*#card-java{
-    position: absolute;
-    left: 10vw;
-    top: 140px;
-}
-
-#card-html{
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 140px;
-}
-
-#card-css{
-    position: absolute;
-    right: 10vw;
-    top: 140px;
-}
-
-#card-javascript{
-    position: absolute;
-    top: 400px;
-    left: 10vw;
-}
-
-#card-mysql{
-    position: absolute;
-    top: 400px;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-#card-python{
-    position: absolute;
-    top: 400px;
-    right: 10vw;
-}*/
-
 #service-div{
     position: absolute;
     height: 60px;
