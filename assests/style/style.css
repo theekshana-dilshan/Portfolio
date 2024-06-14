@@ -227,7 +227,6 @@ button::after {
 
 #aboutSection{
     position: relative;
-    display: flex;
     min-height: 175vh;
     overflow: hidden;
 }
@@ -309,6 +308,16 @@ button::after {
     color: #f37a23;
 }
 
+.skill-all{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 98vh;
+    column-gap: 20vw;
+    row-gap: 10vh;
+    justify-content: center;
+}
+
 .skill-cards{
     position: relative;
     width: 200px;
@@ -346,7 +355,7 @@ button::after {
     text-align: center;
 }
 
-#card-java{
+/*#card-java{
     position: absolute;
     left: 10vw;
     top: 140px;
@@ -384,7 +393,7 @@ button::after {
     position: absolute;
     top: 400px;
     right: 10vw;
-}
+}*/
 
 #service-div{
     position: absolute;

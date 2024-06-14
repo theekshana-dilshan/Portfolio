@@ -104,7 +104,7 @@
 
 }
 
-@media all and (max-width: 1020px) {
+@media all and (max-width: 1025px) {
     .img {
         width: 300px;
     }
@@ -145,6 +145,106 @@
     .header{
         padding: 15px 8%;
     }
+
+    #aboutSection{
+        min-height: 165vh;
+    }
+
+    #photoDiv{
+        width: 280px;
+        height: 280px;
+        margin-top: 150px;
+        left: 5vw;
+    }
+
+    #photoAbout{
+        height: 260px;
+        margin: 10px;
+    }
+
+    #about-descriptions>h3{
+        margin-top: -7px;
+        font-size: 30px;
+    }
+
+    #about-descriptions>p{
+        font-size: 15px;
+        margin-top: 40px;
+    }
+
+    .skill-all{
+        column-gap: 15vw;
+        row-gap: 10vh;
+    }
+
+    .skill-cards{
+        width: 170px;
+        height: 170px;
+    }
+
+    .skill-name{
+        font-size: 12px;
+        bottom: 2px;
+        right: 0;
+        left: 0;
+    }
+
+    .skill-name-div{
+        width: 100%;
+        height: 50px;
+        bottom: 0;
+    }
+
+    #icon-java{
+        width: 100px;
+    }
+
+    #icon-html{
+        width: 50px;
+    }
+
+    #icon-css{
+        width: 75px;
+    }
+
+    #icon-js{
+        width: 100px;
+    }
+
+    #icon-python{
+        width: 60px;
+    }
+
+    #icon-sql{
+        width: 80px;
+    }
+
+    .card-desc{
+        margin-top: 75px;
+    }
+
+    .service-cards{
+        width: 250px;
+        height: 400px;
+    }
+
+    .projects-cards{
+        width: 300px;
+        height: 200px;
+    }
+
+    .project-image{
+        width: 300px;
+        height: 200px;
+    }
+
+    .card-data{
+        width: 200px;
+    }
+
+    #massage-container{
+        height: 25%;
+    }
 }
 
 @media all and (max-width: 965px) {
@@ -176,15 +276,17 @@
     }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 769px) {
     .img {
         width: 340px;
         right: -50px;
     }
 
     .hero-desc{
-        top: 300px;
-        left: 8vw;
+        top: 280px;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
     .hero-desc>h1{
@@ -213,9 +315,9 @@
         left: 0;
         right: 0;
         margin: auto;
-        top: 520px;
+        top: 500px;
         width: 160px;
-        font-size: 8px;
+        font-size: 6px;
     }
 
     .navbar a {
@@ -236,6 +338,140 @@
 
     .home-content{
         text-align: center;
+    }
+
+    #aboutSection{
+        min-height: 140vh;
+    }
+
+    #photoDiv{
+        width: 200px;
+        height: 200px;
+        margin-top: 150px;
+        left: 5vw;
+    }
+
+    #photoAbout{
+        height: 180px;
+        margin: 10px;
+    }
+
+    .about-me-title{
+        font-size: 45px;
+    }
+
+    #about-descriptions{
+        position: absolute;
+        margin-top: 160px;
+        right: 50px;
+        width: 55vw;
+    }
+
+    #about-descriptions>h3{
+        margin-top: -7px;
+        font-size: 20px;
+    }
+
+    #about-descriptions>p{
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    #skill-div{
+        margin-top: 70vh;
+    }
+
+    .skill-title{
+        font-size: 45px;
+    }
+
+    .skill-all{
+        margin-top: 83vh;
+        column-gap: 10vw;
+        row-gap: 8vh;
+        justify-content: center;
+    }
+
+    .skill-cards{
+        width: 150px;
+        height: 150px;
+    }
+
+    #my-service{
+        min-height: 1550px;
+    }
+
+    .service-topic{
+        font-size: 45px;
+    }
+
+    .service-cards{
+        width: 350px;
+        height: 400px;
+    }
+
+    #card-code {
+        top: 180px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #card-web{
+        top: 650px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #card-ui{
+        top: 1120px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #my-projects-section{
+        min-height: 600px;
+    }
+
+    .projects-title{
+        font-size: 45px;
+    }
+
+    .projects-cards{
+        width: 250px;
+        height: 150px;
+    }
+
+    .project-image{
+        width: 250px;
+        height: 150px;
+    }
+
+    .card-data{
+        width: 150px;
+    }
+
+    .card-title{
+        font-size: 15px;
+    }
+
+    .contact-title{
+        font-size: 45px;
+    }
+
+    #contact-fields-div{
+        top: 120px;
+    }
+
+    #massage-container{
+        height: 25%;
+    }
+
+    #send-button{
+        width: 150px;
+        bottom: 28px;
     }
 }
 
@@ -520,7 +756,7 @@
         width: 100%;
     }
 
-    .skill-cards{
+    /*.skill-cards{
         width: 100px;
         height: 100px;
         border-width: 1px;
@@ -546,7 +782,7 @@
         position: absolute;
         top: 220px;
         left: 58vw;
-        /*right: 10vw;*/
+        !*right: 10vw;*!
     }
 
     #card-mysql{
@@ -558,7 +794,7 @@
     #card-python{
         top: 360px;
         right: 10vw;
-    }
+    }*/
 
     .skill-name{
         font-size: 12px;
@@ -980,7 +1216,7 @@
         width: 100%;
     }
 
-    .skill-cards{
+    /*.skill-cards{
         width: 100px;
         height: 100px;
         border-width: 1px;
@@ -1016,7 +1252,7 @@
     #card-python{
         top: 360px;
         right: 15vw;
-    }
+    }*/
 
     .skill-name{
         font-size: 12px;
@@ -1438,7 +1674,7 @@
         width: 100%;
     }
 
-    .skill-cards{
+   /* .skill-cards{
         width: 100px;
         height: 100px;
         border-width: 1px;
@@ -1474,7 +1710,7 @@
     #card-python{
         top: 360px;
         right: 15vw;
-    }
+    }*/
 
     .skill-name{
         font-size: 12px;
