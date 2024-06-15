@@ -1,0 +1,133 @@
+#section{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #31363F;
+    overflow: hidden;
+}
+
+#title-div{
+    position: absolute;
+    top: 100px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+#title{
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+#main-div{
+    position: absolute;
+    height: 50%;
+    width: 80%;
+    top: 220px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.hr{
+    position: absolute;
+    color: white;
+    width: 90%;
+    left: 0;
+    right: 0;
+}
+
+.div{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#div-01{
+    background-color: red;
+    top: 70px;
+    left: 10%;
+}
+
+#div-02{
+    background-color: green;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 25%;
+}
+
+#div-03{
+    background-color: blue;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 39%;
+}
+
+#div-04{
+    background-color: yellow;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 39%;
+}
+
+#div-05{
+    background-color: aquamarine;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 25%;
+}
+
+#div-06{
+    background-color: deeppink;
+    bottom: 70px;
+    right: 10%;
+}
+
+#hr-01{
+    top: 130px;
+}
+
+#hr-02{
+    bottom: 130px;
+}
+
+#btn-div{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 650px;
+}
+
+.btn{
+    width: 80px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#start-btn{
+    background-color: green;
+    margin-right: 20px;
+}
+
+#stop-btn{
+    background-color: red;
+    margin-left: 20px;
+}
+
+
+
+
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 03 - Case 02</title>
+
+  <link rel="stylesheet" href="../assests/style/normalize.css">
+
+  <style>
+    header {
+      background-color: lightblue;
+      position: relative;
+      width: 100vw;
+      height: 60px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    header>img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    header>nav {
+      height: fit-content;
+      position: absolute;
+      right: 1vw;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    header>nav>ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    header>nav>ul>li {
+      display: inline-block;
+    }
+
+    footer{
+      background-color: darkgray;
+      text-align: center;
+      color: white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    main>aside{
+      background-color: purple;
+      color: white;
+      padding: 10px;
+      width: 200px;
+
+      position: absolute;
+      box-sizing: border-box;
+
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    main>aside>ul{
+      margin: 0;
+      list-style: none;
+      padding: 0;
+    }
+
+    main{
+      position: relative;
+    }
+
+    main>section{
+      background-color: yellow;
+      width: calc(100vw - 200px);
+      margin-left: 200px;
+    }
+
+    main>section>p{
+      margin: 0;
+    }
+
+    section>div{
+      position: relative;
+        height: 250px;
+    }
+    section>div>div{
+      width: calc(100%/3);
+      height: 250px;
+
+      position: absolute;
+
+      background: url("Assests/images/697b023b-64a5-49a0-8059-27b963453fb1.gif");
+      background-position: center;
+      background-size: cover;
+    }
+
+    section>div>div:first-child{
+      background-color: red;
+    }
+
+    section>div>div:nth-child(2){
+      background-color: green;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    section>div>div:last-child{
+      background-color: blue;
+      right: 0;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+      <img src="../assests/images/ijse.png" title="ijse.lk" alt="ijse logo" width="150">
+      <nav>
+          <ul>
+              <li>Home</li>
+              <li>Service</li>
+              <li>Contact</li>
+              <li>About Us</li>
+          </ul>
+      </nav>
+  </header>
+  <main>
+      <aside>
+          <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contact</li>
+            <li>About Us</li>
+          </ul>
+      </aside>
+      <section>
+
+        <!--gif-->
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa eveniet fugiat impedit iusto labore libero temporibus ullam vel vitae! Deserunt dolorum ducimus itaque libero nihil, nisi optio quos vel.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa eveniet fugiat impedit iusto labore libero temporibus ullam vel vitae! Deserunt dolorum ducimus itaque libero nihil, nisi optio quos vel.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa eveniet fugiat impedit iusto labore libero temporibus ullam vel vitae! Deserunt dolorum ducimus itaque libero nihil, nisi optio quos vel.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa eveniet fugiat impedit iusto labore libero temporibus ullam vel vitae! Deserunt dolorum ducimus itaque libero nihil, nisi optio quos vel.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa eveniet fugiat impedit iusto labore libero temporibus ullam vel vitae! Deserunt dolorum ducimus itaque libero nihil, nisi optio quos vel.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa eveniet fugiat impedit iusto labore libero temporibus ullam vel vitae! Deserunt dolorum ducimus itaque libero nihil, nisi optio quos vel.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa eveniet fugiat impedit iusto labore libero temporibus ullam vel vitae! Deserunt dolorum ducimus itaque libero nihil, nisi optio quos vel.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa eveniet fugiat impedit iusto labore libero temporibus ullam vel vitae! Deserunt dolorum ducimus itaque libero nihil, nisi optio quos vel.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa eveniet fugiat impedit iusto labore libero temporibus ullam vel vitae! Deserunt dolorum ducimus itaque libero nihil, nisi optio quos vel.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa eveniet fugiat impedit iusto labore libero temporibus ullam vel vitae! Deserunt dolorum ducimus itaque libero nihil, nisi optio quos vel.
+          </p>
+      </section>
+  </main>
+  <footer>
+      <div>Developed by IJSE</div>
+  </footer>
+</body>
+</html>
