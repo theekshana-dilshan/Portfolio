@@ -648,6 +648,63 @@
 }
 
 @media all and (max-width: 429px) {
+    header{
+        height: 60px;
+    }
+
+    header>img{
+        width: 90px;
+        position: absolute;
+        left: 5vw;
+        top: 10px;
+        margin: 0;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 50%;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: #000000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    #menuIcon{
+        position: absolute;
+        top: 15px;
+        left: 90vw;
+    }
+
+    #timeBar{
+        position: absolute;
+    }
+
+    .navbar a {
+        padding: 15px;/*
+        border-top: 1px solid #575757;
+        border-bottom: 1px solid #575757;*/
+    }
+
+    #menuIcon {
+        display: block;
+    }
+
+    .navbar.open {
+        display: flex;
+    }
+
+    #timeBar {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
     #hero{
         min-height: calc(100vh - 60px);
     }

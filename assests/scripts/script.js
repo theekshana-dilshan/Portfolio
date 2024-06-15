@@ -44,3 +44,22 @@ const initOverlayCard = (cardEl) => {
 
 cards.forEach(initOverlayCard);
 document.getElementsByTagName("section")[2].addEventListener("pointermove", applyOverlayMask);
+
+function openmenu() {
+  document.querySelector('.navbar').classList.add('open');
+  var style ="display : none;"
+  document.getElementById("menuIcon").style.cssText = style;
+  var styleHeader = "height: 260px;"
+  document.getElementById("header-tag").style.cssText = styleHeader;
+}
+
+function closemenu() {
+  document.querySelector('.navbar').classList.remove('open');
+  var style ="display : block;"
+  document.getElementById("menuIcon").style.cssText = style;
+  var styleHeader = "height: 60px;"
+  document.getElementById("header-tag").style.cssText = styleHeader;
+}
+
+document.getElementById('menuIcon').addEventListener('click', openmenu);
+document.getElementById('timeBar').addEventListener('click', closemenu);
